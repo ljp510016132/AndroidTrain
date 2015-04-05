@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView  android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rl_send"/>
+
+    <RelativeLayout android:id="@+id/rl_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <EditText android:id="@+id/et_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入发送信息"
+        android:layout_toLeftOf="@+id/btn_send"
+        android:textSize="25sp"
+       	android:layout_alignBottom="@+id/btn_send"/>
+    
+    <Button android:id="@+id/btn_send"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"/>
+    
+    </RelativeLayout>
+</RelativeLayout>
